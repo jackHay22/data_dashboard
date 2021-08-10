@@ -10,6 +10,8 @@ services:
       - data_dashboard_db
     env_file:
       - secrets.env
+    networks:
+      - ddboard-net
   data_dashboard_db:
     image: postgres:9.4
     environment:
@@ -18,8 +20,6 @@ services:
        POSTGRES_PASSWORD: password
     ports:
       - "5432"
-
 networks:
-  default:
-    external:
-      name: ddboard-deploy
+  ddboard-net:
+    driver: bridge
