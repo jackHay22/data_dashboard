@@ -29,6 +29,33 @@ docker-compose up -d
 cd deploy; ./certs.sh
 ```
 
+## Adding users, categories manually
+
+- Find the id of the web container
+```bash
+docker ps
+```
+Example:
+```bash
+CONTAINER ID   IMAGE                               COMMAND                  CREATED         STATUS         PORTS                                         NAMES
+3381b74bcdb9   data_dashboard_data_dashboard_web   "rails server -b 0.0…"   3 minutes ago   Up 3 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp     data_dashboard_data_dashboard_web_1
+```
+
+- Open a shell in the container
+```bash
+docker exec -it 3381b74bcdb9 /bin/bash
+```
+- From this prompt enter the rails console
+```bash
+rails console
+```
+
+- Enter commands (ex):
+```bash
+user=Admin.create!(:email=>'test@test.com',:password=>'password')
+cat=Category.create!()
+```
+
 ## AWS deployment
 - Replace `<my_ip>` with your IP address
 - Replace VPC id, subnets, create a keypair in the aws console and download
