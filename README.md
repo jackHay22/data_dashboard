@@ -28,3 +28,9 @@ docker-compose up
 ```bash
 cd deploy; ./certs.sh && docker-compose up
 ```
+
+## AWS deployment
+
+```bash
+aws cloudformation create-stack --stack-name data-dashboard --template-body file://deploy/cf_demo_stack.yml --parameters ParameterKey=SSHIP,ParameterValue=76.28.82.197/32
+```
