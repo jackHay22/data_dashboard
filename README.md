@@ -26,7 +26,7 @@ docker-compose up -d
 
 - Provision certs, setup reverse proxy
 ```bash
-cd deploy; ./certs.sh && docker-compose up -d
+cd deploy; ./certs.sh
 ```
 
 ## AWS deployment
