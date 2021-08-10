@@ -13,3 +13,4 @@
 /tmp
 .env
 latest.dump
+secrets.env

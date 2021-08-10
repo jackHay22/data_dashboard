@@ -8,8 +8,8 @@ services:
       - "3000:3000"
     links:
       - data_dashboard_db
-    environment:
-      SECRET_KEY_BASE: 65dc3d4cc0ca4fa75c4aabc6d6038552c09b039ac545a1879538803552b3bf16ba04b93407aaea6eb16b4e880454cbefb5652797dba9b7a39a885c4e161035bc
+    env_file:
+      - secrets.env
   data_dashboard_db:
     image: postgres:9.4
     environment:
