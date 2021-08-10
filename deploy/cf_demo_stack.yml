@@ -44,3 +44,12 @@ Resources:
           FromPort: 443
           ToPort: 443
       VpcId: 'TODO'
+  DDBoardDNS:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: TODO
+      Name: dashboard.jackhay.io
+      Type: A
+      TTL: '900'
+      ResourceRecords:
+        - !GetAtt 'DDBoardInstance.PublicIp'
