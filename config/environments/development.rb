@@ -1,5 +1,3 @@
-Rails.application.routes.default_url_options[:protocol] = 'https'
-
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -39,6 +37,8 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
   config.hosts << "dashboard.jackhay.io"
+
+  config.force_ssl = true
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
