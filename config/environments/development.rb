@@ -38,7 +38,7 @@ Rails.application.configure do
 
   config.hosts << "dashboard.jackhay.io"
 
-  config.force_ssl = true
+  #config.force_ssl = true
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
