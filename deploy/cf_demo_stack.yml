@@ -19,7 +19,7 @@ Resources:
       KeyName: 'ddboard-keypair'
       SecurityGroupIds:
         - !Ref DDBoardSG
-      SubnetId: 'subnet-05e1932c38404fdaf'
+      SubnetId: 'subnet-0295a0f8cee7b291d'
       Volumes:
         - VolumeId: !Ref DDBoardInstanceVolume
           Device: /dev/sdk

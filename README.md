@@ -18,7 +18,7 @@ docker-compose build && docker-compose run data_dashboard_web rake db:setup
 
 ### Bring up the database and the web server
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 ## Deployment workflow with https
@@ -26,7 +26,7 @@ docker-compose up
 
 - Provision certs, setup reverse proxy
 ```bash
-cd deploy; ./certs.sh && docker-compose up
+cd deploy; ./certs.sh && docker-compose up -d
 ```
 
 ## AWS deployment
