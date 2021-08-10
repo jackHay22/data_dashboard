@@ -1,17 +1,19 @@
 source 'https://rubygems.org'
 
-ruby "2.3.1"
+ruby "3.0.1"
 
-gem 'rails', '4.2.4'
+gem 'rails', '6.1.3'
 gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'actionpack', '6.1.3'
+gem 'railties', '6.1.3'
 
 gem "bootstrap-sass"
 gem 'jquery-rails'
 gem 'puma'
-gem 'best_in_place'
+gem "best_in_place", git: "https://github.com/mmotherwell/best_in_place"
 
 gem 'rollbar'
 gem 'newrelic_rpm'
@@ -29,6 +31,6 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'spring'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'ffaker'
 end

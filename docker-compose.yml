@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  data_dashboard_web:
+    build: .
+    volumes:
+      - .:/dashboard
+    ports:
+      - "3000:3000"
+    links:
+      - data_dashboard_db
+  data_dashboard_db:
+    image: postgres:9.4
+    ports:
+      - "5432"
