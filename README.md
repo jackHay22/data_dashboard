@@ -30,7 +30,10 @@ cd deploy; ./certs.sh
 ```
 
 ## AWS deployment
+- Replace `<my_ip>` with your IP address
+- Replace VPC id, subnets, create a keypair in the aws console and download
+- Replace Route53 hosted zone id with your own
 
 ```bash
-aws cloudformation create-stack --stack-name data-dashboard --template-body file://deploy/cf_demo_stack.yml --parameters ParameterKey=SSHIP,ParameterValue=76.28.82.197/32
+aws cloudformation create-stack --stack-name data-dashboard --template-body file://deploy/cf_demo_stack.yml --parameters ParameterKey=SSHIP,ParameterValue=<my_ip>/32
 ```
