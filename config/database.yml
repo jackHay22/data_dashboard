@@ -13,4 +13,5 @@ production:
   <<: *default
   database: data_dashboard_production
   username: data_dashboard
-  password: <%= ENV['DATA_DASHBOARD_DATABASE_PASSWORD'] %>
+  password: password
+  host: postgres(data_dashboard_db)

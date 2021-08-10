@@ -1,5 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
-  before_filter :authorize_superadmin
+  before_action :authorize_superadmin
   def new
     if current_admin.nil? || !current_admin.super_admin
       flash[:info] = 'Registrations are not open.'

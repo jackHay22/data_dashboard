@@ -1,6 +1,6 @@
 class Admin::ManageAdminsController < AdminController
   layout 'admin'
-  before_filter :authorize_superadmin
+  before_action :authorize_superadmin
 
   def index
     @admins = Admin.all
