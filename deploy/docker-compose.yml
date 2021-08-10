@@ -23,5 +23,4 @@ services:
       - ./data/certbot/www:/var/www/certbot
 networks:
   data_dashboard_ddboard-net:
-    external:
-      name: data_dashboard_ddboard-net
+    external: true

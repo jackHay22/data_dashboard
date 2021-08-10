@@ -24,4 +24,3 @@ services:
 networks:
   ddboard-net:
     driver: bridge
-    external: true
