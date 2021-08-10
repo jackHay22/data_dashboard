@@ -81,6 +81,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.hosts << "dashboard.jackhay.io"
+
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   host = 'http://datadashboardtest.herokuapp.com'
