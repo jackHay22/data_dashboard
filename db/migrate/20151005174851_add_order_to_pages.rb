@@ -1,4 +1,4 @@
-class AddOrderToPages < ActiveRecord::Migration
+class AddOrderToPages < ActiveRecord::Migration[6.1]
   def change
     remove_column :pages, :title, :string
   end

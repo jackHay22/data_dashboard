@@ -1,4 +1,4 @@
-class AddCardIdToLine < ActiveRecord::Migration
+class AddCardIdToLine < ActiveRecord::Migration[6.1]
   def change
     add_column :lines, :card_id, :integer
     add_column :points, :point_date, :date

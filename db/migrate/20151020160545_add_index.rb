@@ -1,4 +1,4 @@
-class AddIndex < ActiveRecord::Migration
+class AddIndex < ActiveRecord::Migration[6.1]
   def change
     add_index :cards, :page_id
     add_index :external_graphs, :page_id

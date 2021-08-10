@@ -30,3 +30,14 @@ Please feel free to use a different markup language if you do not plan to run
 Walkthrough videos of the final app:
 https://www.youtube.com/watch?v=y2czjZpic-c
 https://www.youtube.com/watch?v=7IzDEde8MPY
+
+## Docker compose workflow (WIP)
+
+```bash
+docker-compose build && docker-compose run data_dashboard_web rake db:create db:migrate
+```
+
+```bash
+docker-compose up
+
+```

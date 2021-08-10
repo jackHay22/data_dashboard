@@ -1,4 +1,4 @@
-class DefaultOrder < ActiveRecord::Migration
+class DefaultOrder < ActiveRecord::Migration[6.1]
   def change
     change_column :graphs, :order, :integer, :default => 10
     change_column :external_graphs, :order, :integer, :default => 10

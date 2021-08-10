@@ -2,7 +2,10 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-
+  host: data_dashboard_db
+  username: data_dashboard
+  password: password
+  
 development:
   <<: *default
   database: data_dashboard_development

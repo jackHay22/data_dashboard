@@ -1,4 +1,4 @@
-class UpdateDefaults < ActiveRecord::Migration
+class UpdateDefaults < ActiveRecord::Migration[6.1]
   def change
     add_column(:graphs, :created_at, :datetime)
     add_column(:graphs, :updated_at, :datetime)

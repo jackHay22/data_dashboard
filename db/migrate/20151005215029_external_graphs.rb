@@ -1,4 +1,4 @@
-class ExternalGraphs < ActiveRecord::Migration
+class ExternalGraphs < ActiveRecord::Migration[6.1]
   def change
     create_table :external_graphs do |t|
       t.integer :admin_id

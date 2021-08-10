@@ -1,4 +1,4 @@
-class MoveUnitsToGraph < ActiveRecord::Migration
+class MoveUnitsToGraph < ActiveRecord::Migration[6.1]
   def change
     remove_column :lines, :unit, :string
     add_column :graphs, :unit, :string

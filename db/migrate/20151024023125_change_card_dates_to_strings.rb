@@ -1,4 +1,4 @@
-class ChangeCardDatesToStrings < ActiveRecord::Migration
+class ChangeCardDatesToStrings < ActiveRecord::Migration[6.1]
   def change
     add_column :cards, :goal_date_string, :string
     add_column :cards, :value_date_string, :string

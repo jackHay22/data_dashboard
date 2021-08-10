@@ -1,4 +1,4 @@
-class CreateGraph < ActiveRecord::Migration
+class CreateGraph < ActiveRecord::Migration[6.1]
   def change
     create_table :graphs do |t|
       t.string :title

@@ -1,4 +1,4 @@
-class CreateContent < ActiveRecord::Migration
+class CreateContent < ActiveRecord::Migration[6.1]
   def change
     create_table :contents do |t|
       t.integer :page_id

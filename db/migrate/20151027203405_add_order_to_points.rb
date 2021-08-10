@@ -1,4 +1,4 @@
-class AddOrderToPoints < ActiveRecord::Migration
+class AddOrderToPoints < ActiveRecord::Migration[6.1]
   def change
     add_column :points, :time_string, :string
     add_column :points, :position, :integer
