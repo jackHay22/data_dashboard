@@ -14,4 +14,4 @@ production:
   database: data_dashboard_production
   username: data_dashboard
   password: password
-  host: postgres(data_dashboard_db)
+  host: data_dashboard_db
