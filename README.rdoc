@@ -40,7 +40,7 @@ echo "SECRET_KEY_BASE=<some secret>" > secrets.env
 
 - Init the database
 ```bash
-docker-compose build && docker-compose run data_dashboard_web rake db:create db:migrate
+docker-compose build && docker-compose run data_dashboard_web rake db:setup
 ```
 
 - Bring up the database and the web server
