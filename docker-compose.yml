@@ -20,6 +20,8 @@ services:
        POSTGRES_PASSWORD: password
     ports:
       - "5432"
+    networks:
+      - ddboard-net
 networks:
   ddboard-net:
     driver: bridge
