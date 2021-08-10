@@ -30,11 +30,7 @@ module DataDashboard
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.assets.precompile << Proc.new { |path|
-      if path =~ /\.(eot|svg|ttf|woff)\z/
-        true
-      end
-    }
+    config.assets.precompile << ["*.svg", "*.eot", "*.woff", "*.ttf"]
 
     config.action_dispatch.default_headers = {
       'X-Frame-Options' => 'ALLOWALL'
