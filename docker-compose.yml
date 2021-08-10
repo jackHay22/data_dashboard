@@ -18,3 +18,8 @@ services:
        POSTGRES_PASSWORD: password
     ports:
       - "5432"
+
+networks:
+  default:
+    external:
+      name: ddboard-deploy
